@@ -1,7 +1,8 @@
 # APIs
-## Setup
+## Resources
 - Download the chrome extension: [postman](https://www.getpostman.com/). It's an easy way to make api requests with a point-and-click interface
 - Use http://jsonplaceholder.typicode.com/ to try out interacting with a restful api
+- Check out this [list](https://github.com/toddmotto/public-apis) to get started with some apis
 ## Terms
 
 | Term | Definition |
