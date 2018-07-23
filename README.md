@@ -10,6 +10,7 @@
 | `API` | Application Programming Interface |
 | `HTTP` | hypertext transfer protocol |
 | `JSON` | Javascript Object Notation |
+| `cURL` | Client URL |
 
 ## Overview
 
