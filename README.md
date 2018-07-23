@@ -144,9 +144,9 @@ $.get(url,
 ```
 #### Private API
 ```javascript
-var url = "https://api.giphy.com/v1/gifs/search?q=dog&api_key=Rcx7a5vfUp1y6BZ1KjUtKLI2UovfkU3j";
+var url = "https://api.giphy.com/v1/gifs/search?q=dog&api_key=zSGpBv8GUGZciSVedQztiYQlVs6n4Mzg";
 // `?q=dog` represents the query param with value of 'dog'
-// &api_key=Rcx7a5vfUp1y6BZ1KjUtKLI2UovfkU3j is the unique key to access the api
+// &api_key=zSGpBv8GUGZciSVedQztiYQlVs6n4Mzg is the unique key to access the api
 
 $.get(url,
   function(response) {
