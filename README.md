@@ -34,6 +34,12 @@ APIs that follow the restful architecture use certain HTTP methods
 | Update | `UPDATE` | `PUT`/`PATCH` |
 | Delete | `DELETE` | `DELETE` |
 
+### Query params
+
+Query params are a key-value based way of including data in the url:
+
+https://example.com/resource-name?param1=value1&param2=value2
+
 ### Response codes
 
 A server will send a response code to represent whether or not the request was successful. 
