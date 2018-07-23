@@ -120,9 +120,11 @@ You can test this the [demo api](http://jsonplaceholder.typicode.com/) site dire
 - Open your developer console (`CMD+OPT+i`)
 - Paste this in the console and run it (`ENTER`)
 ```javascript
-$.get( "http://jsonplaceholder.typicode.com/posts/1", 
-  function( data ) {
-    console.log(data);
+var url = "http://jsonplaceholder.typicode.com/posts/1";
+
+$.get(url,
+  function(response) {
+    console.log(response);
   }
 );
 
@@ -135,12 +137,44 @@ $.get( "http://jsonplaceholder.typicode.com/posts/1",
 ```
 #### Private API
 ```javascript
-$.getJSON( // make a request GET http method
-  "https://api.giphy.com/v1/gifs/search?q=dog&api_key=Rcx7a5vfUp1y6BZ1KjUtKLI2UovfkU3j", // request url
-  function(response) {   // response handler method
+var url = "https://api.giphy.com/v1/gifs/search?q=dog&api_key=Rcx7a5vfUp1y6BZ1KjUtKLI2UovfkU3j";
+// `?q=dog` represents the query param with value of 'dog'
+// &api_key=Rcx7a5vfUp1y6BZ1KjUtKLI2UovfkU3j is the unique key to access the api
+
+$.get(url,
+  function(response) {
     console.log(response);
   }
 );
+
+{
+  data: [
+    {
+      type: "gif", 
+      id: "mCRJDo24UvJMA", 
+      slug: "dog-shiba-inu-typing-mCRJDo24UvJMA", 
+      url: "https://giphy.com/gifs/dog-shiba-inu-typing-mCRJDo24UvJMA", 
+      bitly_gif_url: "https://gph.is/1gSRt8W"
+    },
+    {
+      type: "gif", 
+      id: "dTJd5ygpxkzWo", 
+      slug: "dog-nirvana-doggie-dTJd5ygpxkzWo", 
+      url: "https://giphy.com/gifs/dog-nirvana-doggie-dTJd5ygpxkzWo", 
+      bitly_gif_url: "https://gph.is/2cdgtLv"
+    }
+  ],
+  pagination: {
+    total_count: 135723, 
+    count: 25, 
+    offset: 0
+  },
+  meta: {
+    status: 200, 
+    msg: "OK", 
+    response_id: "5b5648554f44336b558c5ba2"
+  }
+}
 ```
 ### Ruby
 
