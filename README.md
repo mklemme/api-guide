@@ -177,5 +177,24 @@ $.get(url,
 }
 ```
 ### Ruby
+```ruby
+require 'net/http'
+require 'json'
 
+url = URI.parse('https://jsonplaceholder.typicode.com/posts/1')
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true # some apis only support https
+request = Net::HTTP::Get.new(url.request_uri)
+response = http.request(request)
+
+p JSON.parse(response.body)
+
+=> {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+```
 
