@@ -11,6 +11,7 @@
 | `HTTP` | hypertext transfer protocol |
 | `JSON` | Javascript Object Notation |
 | `cURL` | Client URL |
+| `auth key` | A unique token used to access private apis |
 
 ## Overview
 
