@@ -40,7 +40,7 @@ APIs that follow the restful architecture use certain HTTP methods
 
 Query params are a key-value based way of including data in the url:
 
-https://example.com/resource-name?param1=value1&param2=value2
+`https://example.com/resource-name?param1=value1&param2=value2`
 
 ### Response codes
 
